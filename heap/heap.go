@@ -15,7 +15,7 @@ func TryMaxHeap() {
 	}
 
 	fmt.Println("Extracting top value")
-	
+
 	val := maxHeap.Extract()
 
 	fmt.Println(val)

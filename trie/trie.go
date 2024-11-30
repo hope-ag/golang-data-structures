@@ -7,7 +7,7 @@ const AlphabetSize = 26
 
 type Node struct {
 	children [AlphabetSize]*Node
-	isEnd bool
+	isEnd    bool
 }
 
 type Trie struct {
@@ -23,7 +23,7 @@ func (trie *Trie) Insert(_w string) {
 	w := strings.ToLower(_w)
 	current := trie.root
 	wordLength := len(w)
-	for i :=0; i < wordLength; i++ {
+	for i := 0; i < wordLength; i++ {
 		charIndex := w[i] - 'a'
 		// insert the node if it doesn't exist
 		if current.children[charIndex] == nil {

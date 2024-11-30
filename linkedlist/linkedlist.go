@@ -2,11 +2,11 @@ package linkedlist
 
 type Node struct {
 	value int
-	next *Node
+	next  *Node
 }
 
 type LinkedList struct {
-	head *Node
+	head   *Node
 	length int
 }
 
@@ -32,7 +32,7 @@ func (linkedList *LinkedList) Append(value *Node) {
 	}
 }
 
-func (linkedList *LinkedList) ReplaceNode (index int, value *Node) int {
+func (linkedList *LinkedList) ReplaceNode(index int, value *Node) int {
 	if linkedList.head == nil {
 		return -1
 	}

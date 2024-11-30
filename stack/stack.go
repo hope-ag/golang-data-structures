@@ -17,17 +17,17 @@ func (stack *Stack) Push(item int) {
 }
 
 func (stack *Stack) Pop() int {
-	if (stack.IsEmpty()) {
+	if stack.IsEmpty() {
 		return -1
 	}
-	item := stack.items[len(stack.items) - 1]
-	stack.items = stack.items[:len(stack.items) - 1]
+	item := stack.items[len(stack.items)-1]
+	stack.items = stack.items[:len(stack.items)-1]
 	return item
 }
 
 func (stack *Stack) Peek() int {
-	if (stack.IsEmpty()) {
+	if stack.IsEmpty() {
 		return -1
 	}
-	return stack.items[len(stack.items) - 1]
+	return stack.items[len(stack.items)-1]
 }

@@ -32,7 +32,7 @@ func (h *MaxHeap) Extract() int {
 	return head
 }
 
-func (h * MaxHeap) maxHeapifyUp(i int) {
+func (h *MaxHeap) maxHeapifyUp(i int) {
 	index := i
 	parentIndex := getParentIndex(index)
 

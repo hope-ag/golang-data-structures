@@ -5,14 +5,14 @@ type Queue struct {
 }
 
 /*
- returns the length of the queue
+returns the length of the queue
 */
 func (queue *Queue) GetLength() int {
 	return len(queue.items)
 }
 
 /*
- returns true if the queue is empty
+returns true if the queue is empty
 */
 func (queue *Queue) IsEmpty() bool {
 	return len(queue.items) == 0
@@ -24,10 +24,10 @@ func (queue *Queue) Enqueue(item int) {
 }
 
 /*
- Dequeue removes and returns the first item in the queue
+Dequeue removes and returns the first item in the queue
 */
 func (queue *Queue) Dequeue() int {
-	if (queue.IsEmpty()) {
+	if queue.IsEmpty() {
 		return -1
 	}
 	item := queue.items[0]
@@ -36,10 +36,10 @@ func (queue *Queue) Dequeue() int {
 }
 
 /*
- Peek returns the first item in the queue without removing it
+Peek returns the first item in the queue without removing it
 */
 func (queue *Queue) Peek() int {
-	if (queue.IsEmpty()) {
+	if queue.IsEmpty() {
 		return -1
 	}
 	return queue.items[0]
